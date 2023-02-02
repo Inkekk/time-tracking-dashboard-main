@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  padding: 24px;
+  background-color: #0E1323;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+.cabecalho {
+  margin-bottom: 24px;
+  width: 327px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 2;
+  position: relative;
+  border-radius: 15px;
+  background-color: #5747EA;
+  padding: 35px 39px 34px 32px;
+  top: 12px;
+}
+
+.perfil-foto {
+  width: 64px;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.report {
+  font-size: 15px;
+  color: #BBC0FF;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+
+.name {
+  font-weight: 300;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.selecao-tempo-list {
+  background-color: #1C204B;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 25px;
+  padding-top: 37px;
+  display: flex;
+  justify-content: space-between;
+  color: #7078C9;
+}
+
+.secao-horarios {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.div {
+  width: 327px;
+}
+
+.bg {
+  width: 100%;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 160px;
+}
+
+.work .bg {
+  background-color: #FF8B64;
+  background-image: url(../images/icon-work.svg);
+}
+
+.play .bg {
+  background-color: #55C2E6;
+  background-image: url(../images/icon-play.svg);
+}
+
+.study .bg {
+  background-color: #FF5E7D;
+  background-image: url(../images/icon-study.svg);
+}
+
+.exercise .bg {
+  background-color: #4BCF82;
+  background-image: url(../images/icon-exercise.svg);
+}
+
+.social .bg {
+  background-color: #7335D2;
+  background-image: url(../images/icon-social.svg);
+}
+
+.self-care .bg {
+  background-color: #F1C75B;
+  background-image: url(../images/icon-self-care.svg);
+}
+
+.active {
+  color: #FFFFFF;
+  transition: .2s;
+}
+
+li {
+  cursor: pointer;
+}
+
+.div-container {
+  background-color: #1C204B;
+  position: relative;
+  top: 50px;
+  border-radius: 15px;
+  padding: 28px 24px;
+}
+
+.div-container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.container-horas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hours {
+  font-weight: 300;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.previous-p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #BBC0FF;
+}
+
+@media screen and (min-width: 1440px) {
+
+  main {
+    display: flex;
+    justify-content: left;
+  }
+
+  .secao-horarios {
+    display: grid;
+    grid-template-rows: 235px 235px;
+    grid-template-columns: 255px 255px 255px;
+    gap: 58px;
+  }
+
+  .cabecalho {
+    max-width: 15.938rem;
+    margin-right: 1.875rem;
+    margin-bottom: 0;
+  }
+
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    /* padding: 37px 85px 80px 32px;  */
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .perfil-foto {
+    width: 78px;
+    margin-bottom: 2.688rem;
+  }
+
+  .name {
+    font-size: 40px;
+    line-height: 2.963rem;
+    margin-bottom: 3rem;
+  }
+
+  .div {
+    max-width: 255px;
+
+  }
+
+  .div-container {
+    padding: 32px;
+  }
+
+  .selecao-tempo-list {
+    flex-direction: column;
+    gap: 21px;
+    padding: 32px;
+  }
+
+  li {
+    font-size: 18px;
+  }
+
+  .div header {
+    margin-bottom: 1.5rem;
+  }
+
+  .container-horas {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .hours {
+    font-size: 56px;
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header class="cabecalho">
+      <div class="perfil">
+        <img class="perfil-foto" src="./images/image-jeremy.png" alt="">
+        <div>
+          <p class="report">Report for</p>
+          <h2 class="name">Jeremy Robson</h2>
+        </div>
+      </div>
+      <ul class="selecao-tempo-list">
+        <li>Daily</li>
+        <li class="active">
+          Weekly
+        </li>
+        <li>
+          Monthly
+        </li>
+      </ul>
+    </header>
+    <section class="secao-horarios">
+
+      <div class="div work">
+        <div class="bg">
+          <div class="div-container">
+            <header>
+              <h3 class="title">--</h3>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </header>
+            <div class="container-horas">
+              <p class="hours">--</p>
+              <p class="previous-p">Last <span class="date">--</span> - <span class="previous">--</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div play">
+        <div class="bg">
+          <div class="div-container">
+            <header>
+              <h2 class="title">--</h2>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </header>
+            <div class="container-horas">
+              <p class="hours">--</p>
+              <p class="previous-p">Last <span class="date">--</span> - <span class="previous">--</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div study">
+        <div class="bg">
+          <div class="div-container">
+            <header>
+              <h2 class="title">--</h2>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </header>
+            <div class="container-horas">
+              <p class="hours">--</p>
+              <p class="previous-p">Last <span class="date">--</span> - <span class="previous">--</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div exercise">
+        <div class="bg">
+          <div class="div-container">
+            <header>
+              <h2 class="title">--</h2>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </header>
+            <div class="container-horas">
+              <p class="hours">--</p>
+              <p class="previous-p">Last <span class="date">--</span> - <span class="previous">--</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div social">
+        <div class="bg">
+          <div class="div-container">
+            <header>
+              <h2 class="title">--</h2>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </header>
+            <div class="container-horas">
+              <p class="hours">--</p>
+              <p class="previous-p">Last <span class="date">--</span> - <span class="previous">--</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div self-care">
+        <div class="bg">
+          <div class="div-container">
+            <header>
+              <h2 class="title">--</h2>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </header>
+            <div class="container-horas">
+              <p class="hours">--</p>
+              <p class="previous-p">Last <span class="date">--</span> - <span class="previous">--</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
